@@ -1,6 +1,7 @@
 import '../styles/main.scss'; // You have to import your styles for them to work. Comment in this line
 import houses from '../utils/sample_data/houseData'; // importing house data
 import voldysArmy from '../voldyArray'; // importing voldy's Army
+import students from '../utils/studentData'; // importing student data
 
 const createId = (array) => {
   if (array.length) {
@@ -9,8 +10,6 @@ const createId = (array) => {
   }
   return 0;
 };
-
-const students = [];
 
 const renderToDOM = (divId, content) => {
   const selectedDiv = document.querySelector(divId);
